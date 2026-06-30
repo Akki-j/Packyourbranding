@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: pyb-api
+    env: node
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3001"
+      - key: GOOGLE_SERVICE_ACCOUNT_EMAIL
+        sync: false
+      - key: GOOGLE_PRIVATE_KEY
+        sync: false
+      - key: GOOGLE_SHEET_ID
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
+      - key: NOTIFICATION_EMAIL
+        sync: false
+      - key: EMAIL_FROM
+        value: Pack Your Branding <noreply@packyourbranding.com>
+      - key: CORS_ORIGIN
+        value: https://www.packyourbranding.com
+
+  - type: web
+    name: pyb-client
+    env: static
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://pyb-api.onrender.com
