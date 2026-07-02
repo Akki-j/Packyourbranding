@@ -4,10 +4,12 @@ import ServiceCard from "../components/ServiceCard";
 import { ServiceItem } from "../types";
 
 const GALLERY_IMAGES = [
-  { src: "/assets/bag--1.jpg", alt: "Luxury Shopping Bag" },
-  { src: "/assets/bag-2.jpg", alt: "Eco Friendly Packaging" },
-  { src: "/assets/bag-3.jpg", alt: "Corporate Gift Bag" },
-  { src: "/assets/bag--4.jpg", alt: "Boutique Packaging" },
+  { src: "/assets/bag--1.jpg", alt: "Premium bag 1" },
+  { src: "/assets/bag--2.jpg", alt: "Premium bag 2" },
+  { src: "/assets/bag--3.jpg", alt: "Premium bag 3" },
+  { src: "/assets/bag--5.jpg", alt: "Premium bag 5" },
+  { src: "/assets/bag--6.jpg", alt: "Premium bag 6" },
+  { src: "/assets/bag--7.jpg", alt: "Premium bag 7" },
 ];
 
 const CATEGORIES: ServiceItem[] = [
