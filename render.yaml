@@ -23,7 +23,7 @@ services:
       - key: EMAIL_FROM
         value: Pack Your Branding <noreply@packyourbranding.com>
       - key: CORS_ORIGIN
-        value: https://www.packyourbranding.com
+        value: https://packyourbranding.me,https://www.packyourbranding.com
 
   - type: web
     name: pyb-client
@@ -33,4 +33,4 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        value: https://pyb-api.onrender.com
+        value: https://packyourbranding.onrender.com
