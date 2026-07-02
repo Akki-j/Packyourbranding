@@ -21,7 +21,7 @@ services:
       - key: NOTIFICATION_EMAIL
         sync: false
       - key: EMAIL_FROM
-        value: Pack Your Branding <noreply@packyourbranding.com>
+        value: Pack Your Branding <noreply@resend.dev>
       - key: CORS_ORIGIN
         value: https://packyourbranding.me,https://www.packyourbranding.com
 

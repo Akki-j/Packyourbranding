@@ -3,27 +3,27 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://www.packyourbranding.com/</loc>
+    <loc>https://packyourbranding.me/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.packyourbranding.com/about</loc>
+    <loc>https://packyourbranding.me/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.packyourbranding.com/services</loc>
+    <loc>https://packyourbranding.me/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.packyourbranding.com/gallery</loc>
+    <loc>https://packyourbranding.me/gallery</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.packyourbranding.com/contact</loc>
+    <loc>https://packyourbranding.me/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
