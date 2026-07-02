@@ -39,7 +39,7 @@ const TESTIMONIALS: TestimonialItem[] = [
 
 const CONTACT_ITEMS = [
   { label: "Pack Your Branding", value: "Premium custom packaging solutions for modern businesses." },
-  { label: "Contact Details", value: "Email: hello@packyourbranding.com\nPhone: +91 98765 43210\nGurugram, Haryana, India" },
+  { label: "Contact Details", value: "Email: packyourbranding@gmail.com\nPhone: +91 9034987453\nAazad Nagar, Hisar, Haryana, India" },
 ];
 
 export default function Home() {

@@ -2,9 +2,9 @@ import HeroSection from "../components/HeroSection";
 import QuoteForm from "../components/QuoteForm";
 
 const CONTACT_DETAILS = [
-  { label: "Office Address", value: "Industrial Area, Gurugram, Haryana, India" },
-  { label: "Phone Number", value: "+91 98765 43210" },
-  { label: "Email Address", value: "hello@packyourbranding.com" },
+  { label: "Office Address", value: "Aazad Nagar, Hisar, Haryana, India" },
+  { label: "Phone Number", value: "+91 9034987453" },
+  { label: "Email Address", value: "packyourbranding@gmail.com" },
 ];
 
 export default function Contact() {
@@ -72,7 +72,7 @@ export default function Contact() {
               Let us create custom bags that strengthen your brand identity and leave a lasting impression on your customers.
             </p>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919034987453"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
