@@ -15,7 +15,7 @@ export default function Contact() {
         title="Let's Build"
         highlight="Your Brand"
         description="We help businesses create premium packaging solutions that customers remember. Contact us today for a free consultation and quotation."
-        imageSrc="/assets/team.jpg"
+        imageSrc="/assets/team.png"
         imageAlt="Contact Pack Your Branding"
       />
 

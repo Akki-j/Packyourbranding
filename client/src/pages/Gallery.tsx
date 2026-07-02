@@ -4,10 +4,10 @@ import ServiceCard from "../components/ServiceCard";
 import { ServiceItem } from "../types";
 
 const GALLERY_IMAGES = [
-  { src: "/assets/bag-1.jpg", alt: "Luxury Shopping Bag" },
+  { src: "/assets/bag--1.jpg", alt: "Luxury Shopping Bag" },
   { src: "/assets/bag-2.jpg", alt: "Eco Friendly Packaging" },
   { src: "/assets/bag-3.jpg", alt: "Corporate Gift Bag" },
-  { src: "/assets/bag-4.jpg", alt: "Boutique Packaging" },
+  { src: "/assets/bag--4.jpg", alt: "Boutique Packaging" },
 ];
 
 const CATEGORIES: ServiceItem[] = [
@@ -33,7 +33,7 @@ export default function Gallery() {
         title="Premium"
         highlight="Packaging"
         description="Discover sample projects and packaging concepts designed for modern brands. Replace these images with your own work whenever you're ready."
-        imageSrc="/assets/bag-1.jpg"
+        imageSrc="/assets/bag--1.jpg"
         imageAlt="Premium Custom Bags"
         primaryBtn={{ label: "Start Your Project", href: "/contact" }}
       />

@@ -34,7 +34,7 @@ export default function Services() {
         title="Premium Packaging"
         highlight="Solutions"
         description="We manufacture attractive branded bags and packaging products that help your business gain more attention and deliver an unforgettable customer experience."
-        imageSrc="/assets/bag-1.jpg"
+        imageSrc="/assets/bag--1.jpg"
         imageAlt="Premium Packaging Services"
         primaryBtn={{ label: "Request Free Quote", href: "/contact" }}
       />

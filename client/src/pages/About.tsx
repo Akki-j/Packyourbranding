@@ -24,7 +24,7 @@ export default function About() {
         title="We Build"
         highlight="Packaging"
         description="Helping businesses create memorable customer experiences through premium customized bags and packaging solutions."
-        imageSrc="/assets/team.jpg"
+        imageSrc="/assets/team.png"
         imageAlt="About Pack Your Branding"
       />
 
@@ -44,7 +44,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="/assets/team.jpg"
+                src="/assets/team.png"
                 alt="Our Team"
                 style={{ borderRadius: 40, boxShadow: "var(--shadow)" }}
               />
