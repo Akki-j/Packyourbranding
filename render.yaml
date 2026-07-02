@@ -23,7 +23,7 @@ services:
       - key: EMAIL_FROM
         value: Pack Your Branding <noreply@resend.dev>
       - key: CORS_ORIGIN
-        value: https://packyourbranding.me,https://www.packyourbranding.com
+        value: https://packyourbranding.me,https://www.packyourbranding.com,https://packyourbranding-git-main-akki-js-projects.vercel.app
 
   - type: web
     name: pyb-client
