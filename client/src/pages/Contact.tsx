@@ -3,7 +3,7 @@ import QuoteForm from "../components/QuoteForm";
 
 const CONTACT_DETAILS = [
   { label: "Office Address", value: "Aazad Nagar, Hisar, Haryana, India" },
-  { label: "Phone Number", value: "+91 9034987453" },
+  { label: "Phone Number", value: "+91 7015488544" },
   { label: "Email Address", value: "packyourbranding@gmail.com" },
 ];
 
@@ -72,7 +72,7 @@ export default function Contact() {
               Let us create custom bags that strengthen your brand identity and leave a lasting impression on your customers.
             </p>
             <a
-              href="https://wa.me/919034987453"
+              href="https://wa.me/917015488544"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
