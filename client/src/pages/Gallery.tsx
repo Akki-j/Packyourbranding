@@ -8,8 +8,8 @@ const GALLERY_IMAGES = [
   { src: "/assets/bag--2.jpg", alt: "Premium bag 2" },
   { src: "/assets/bag--3.jpg", alt: "Premium bag 3" },
   { src: "/assets/bag--5.jpg", alt: "Premium bag 5" },
-  { src: "/assets/bag--6.jpg", alt: "Premium bag 6" },
-  { src: "/assets/bag--7.jpg", alt: "Premium bag 7" },
+  { src: "/assets/jain-jewellers-emerald-premium-bag.jpg", alt: "Emerald green luxury jewellery packaging bag for Jain Jewellers" },
+  { src: "/assets/jain-jewellers-ivory-premium-bag.jpg", alt: "Ivory luxury jewellery packaging bag for Jain Jewellers" },
 ];
 
 const CATEGORIES: ServiceItem[] = [
