@@ -40,7 +40,7 @@ export default function Home() {
       <HeroSection
         badge="Premium Custom Packaging Manufacturer"
         title="Packaging That Makes"
-        highlight="Your Brand"
+        highlight="Your Brand Unforgettable"
         description="We create luxury custom bags and packaging solutions that help businesses leave a lasting impression on every customer."
         imageSrc="/assets/bag--4.jpg"
         imageAlt="Luxury Packaging"
