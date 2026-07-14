@@ -1,5 +1,7 @@
-import { google } from "googleapis";
+import { google, sheets_v4 } from "googleapis";
 import { Lead, SheetsConfig } from "../types";
+
+const SHEETS_TIMEOUT_MS = 12000;
 
 export function createSheetsService(config: SheetsConfig) {
   const auth = new google.auth.JWT(
@@ -9,9 +11,10 @@ export function createSheetsService(config: SheetsConfig) {
     ["https://www.googleapis.com/auth/spreadsheets"]
   );
 
-  const sheets = google.sheets({ version: "v4", auth, timeout: 15000 });
+  const sheets: sheets_v4.Sheets = google.sheets({ version: "v4", auth, timeout: SHEETS_TIMEOUT_MS });
 
   async function appendLead(lead: Lead): Promise<void> {
+    const start = performance.now();
     try {
       await sheets.spreadsheets.values.append({
         spreadsheetId: config.sheetId,
@@ -31,10 +34,11 @@ export function createSheetsService(config: SheetsConfig) {
           ]],
         },
       });
-
-      console.log("[SHEETS] Lead appended successfully");
-    } catch (error) {
-      console.error("[SHEETS] Append failed:", error);
+      const elapsed = ((performance.now() - start) / 1000).toFixed(2);
+      console.log(`[SHEETS] Lead appended (${elapsed}s)`);
+    } catch (error: unknown) {
+      const elapsed = ((performance.now() - start) / 1000).toFixed(2);
+      console.error(`[SHEETS] Append failed after ${elapsed}s:`, error instanceof Error ? error.message : error);
       throw new Error("Failed to save lead to Google Sheets");
     }
   }

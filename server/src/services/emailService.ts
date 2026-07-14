@@ -42,6 +42,7 @@ export function createEmailService(config: EmailConfig) {
   }
 
   async function sendLeadNotification(lead: Lead): Promise<void> {
+    const start = performance.now();
     try {
       await resend.emails.send({
         from: config.from,
@@ -50,9 +51,11 @@ export function createEmailService(config: EmailConfig) {
         html: formatEmailHtml(lead),
       });
 
-      console.log("[EMAIL] Notification sent successfully");
+      const elapsed = ((performance.now() - start) / 1000).toFixed(2);
+      console.log(`[EMAIL] Sent (${elapsed}s)`);
     } catch (error) {
-      console.error("[EMAIL] Send failed:", error);
+      const elapsed = ((performance.now() - start) / 1000).toFixed(2);
+      console.error(`[EMAIL] Failed after ${elapsed}s:`, error instanceof Error ? error.message : error);
       throw new Error("Failed to send email notification");
     }
   }

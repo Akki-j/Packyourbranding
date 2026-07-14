@@ -19,7 +19,10 @@ export async function submitLead(data: LeadFormData): Promise<ApiResponse> {
     return result;
   } catch (err) {
     if (err instanceof DOMException && err.name === "AbortError") {
-      return { success: false, message: "Request timed out. Please try again." };
+      return {
+        success: false,
+        message: "Your request is taking longer than expected. Please try again or contact us on WhatsApp.",
+      };
     }
     return { success: false, message: "Network error. Please check your connection." };
   } finally {

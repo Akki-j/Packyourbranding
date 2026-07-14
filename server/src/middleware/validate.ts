@@ -48,6 +48,12 @@ export const leadSchema = z.object({
     .max(100, "Source is too long")
     .optional()
     .default("website"),
+  idempotencyKey: z
+    .string()
+    .trim()
+    .max(64, "Invalid request")
+    .optional()
+    .default(""),
 });
 
 export function validateLead(req: Request, res: Response, next: NextFunction): void {

@@ -48,7 +48,7 @@ export default function QuoteForm({ source = "website" }: QuoteFormProps) {
             }}
           >
             <p style={{ fontSize: "1.5rem", marginBottom: 20, color: "#c9a227" }}>
-              ✓ Request Submitted!
+              ✓ Request Sent Successfully
             </p>
             <p style={{ color: "#94a3b8", marginBottom: 30 }}>{message}</p>
             <button
@@ -169,6 +169,11 @@ export default function QuoteForm({ source = "website" }: QuoteFormProps) {
           {status === "error" && !Object.keys(fieldErrors).length && (
             <p style={{ color: "#ef4444", textAlign: "center" }}>{message}</p>
           )}
+          <div role="status" aria-live="polite" className="sr-only">
+            {status === "loading" ? "Sending your request, please wait." : ""}
+            {status === "success" ? "Your request has been sent successfully." : ""}
+            {status === "error" ? "There was an error. Please try again." : ""}
+          </div>
           <button
             type="submit"
             className="btn btn-primary"
@@ -179,7 +184,14 @@ export default function QuoteForm({ source = "website" }: QuoteFormProps) {
               opacity: status === "loading" ? 0.7 : 1,
             }}
           >
-            {status === "loading" ? "Submitting..." : "Request Quote"}
+            {status === "loading" ? (
+              <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+                <span className="spinner" aria-hidden="true" />
+                Sending Request…
+              </span>
+            ) : (
+              "Request Quote"
+            )}
           </button>
         </form>
       </div>

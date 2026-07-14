@@ -7,6 +7,7 @@ export interface LeadFormData {
   quantity: string;
   message: string;
   source: string;
+  idempotencyKey?: string;
 }
 
 export interface ApiResponse {
