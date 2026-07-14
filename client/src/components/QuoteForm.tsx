@@ -1,11 +1,14 @@
 import { useQuoteForm } from "../hooks/useQuoteForm";
 import { LeadFormData } from "../types";
 
-const SERVICE_OPTIONS = [
-  "Select Bag Type",
-  "Luxury Shopping Bags",
-  "Food Packaging",
-  "Eco Packaging",
+const SERVICE_OPTIONS: { value: string; label: string }[] = [
+  { value: "", label: "Select Bag Type" },
+  { value: "fashion-packaging", label: "Fashion Packaging" },
+  { value: "food-bakery-packaging", label: "Food & Bakery Packaging" },
+  { value: "cosmetic-packaging", label: "Cosmetic Packaging" },
+  { value: "jewellery-packaging", label: "Jewellery Packaging" },
+  { value: "corporate-gift-bags", label: "Corporate Gift Bags" },
+  { value: "eco-friendly-products", label: "Eco-Friendly Products" },
 ];
 
 interface QuoteFormProps {
@@ -126,12 +129,13 @@ export default function QuoteForm({ source = "website" }: QuoteFormProps) {
               required
               value={formData.service}
               onChange={onChange}
+              aria-label="Select Bag Type"
               aria-invalid={!!fieldErrors.service}
               aria-describedby={fieldErrors.service ? "service-error" : undefined}
             >
               {SERVICE_OPTIONS.map((opt) => (
-                <option key={opt} value={opt === "Select Bag Type" ? "" : opt}>
-                  {opt}
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
                 </option>
               ))}
             </select>
