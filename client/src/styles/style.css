@@ -543,12 +543,6 @@ nav a:hover {
   transition: 0.4s ease;
 }
 
-.gallery-grid :nth-child(5) img,
-.gallery-grid :nth-child(6) img {
-  object-fit: contain;
-  background: #ffffff;
-}
-
 /* ==========================
    TESTIMONIALS
 ========================== */
