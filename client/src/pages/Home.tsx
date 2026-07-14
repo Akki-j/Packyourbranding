@@ -1,18 +1,10 @@
 import HeroSection from "../components/HeroSection";
-import StatsCounter from "../components/StatsCounter";
 import ServiceCard from "../components/ServiceCard";
 import ScrollReveal from "../components/ScrollReveal";
 import GalleryGrid from "../components/GalleryGrid";
 import TestimonialSlider from "../components/TestimonialSlider";
 import QuoteForm from "../components/QuoteForm";
-import { StatItem, ServiceItem, TestimonialItem } from "../types";
-
-const STATS: StatItem[] = [
-  { target: "500", label: "Custom Orders", suffix: "" },
-  { target: "400", label: "Happy Clients", suffix: "" },
-  { target: "50", label: "Cities Served", suffix: "" },
-  { value: "100%", label: "Quality Commitment", suffix: "" },
-];
+import { ServiceItem, TestimonialItem } from "../types";
 
 const SERVICES: ServiceItem[] = [
   { title: "Luxury Shopping Bags", description: "Elegant branded shopping bags for boutiques and retail stores." },
@@ -55,8 +47,6 @@ export default function Home() {
         primaryBtn={{ label: "Get Free Quote", href: "#quote" }}
         secondaryBtn={{ label: "View Portfolio", href: "#gallery" }}
       />
-
-      <StatsCounter items={STATS} />
 
       <section className="about-company" id="about">
         <div className="container">

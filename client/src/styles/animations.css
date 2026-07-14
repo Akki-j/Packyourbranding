@@ -152,26 +152,6 @@
 }
 
 /* ==========================
-   COUNTER POP EFFECT
-========================== */
-
-.counter {
-  animation: counterPop 1s ease;
-}
-
-@keyframes counterPop {
-  0% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* ==========================
    NAVBAR SCROLL EFFECT
 ========================== */
 
@@ -203,21 +183,6 @@
 
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.15);
-}
-
-/* ==========================
-   STAT CARD ANIMATION
-========================== */
-
-.stat-card {
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease;
-}
-
-.stat-card:hover {
-  box-shadow:
-    0 25px 50px rgba(0, 0, 0, 0.12);
 }
 
 /* ==========================

@@ -30,9 +30,3 @@ export interface TestimonialItem {
   author: string;
 }
 
-export interface StatItem {
-  target?: string;
-  value?: string;
-  label: string;
-  suffix: string;
-}
